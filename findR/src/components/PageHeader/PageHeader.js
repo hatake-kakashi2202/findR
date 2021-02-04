@@ -17,12 +17,12 @@ import {
 
 export default function PageHeader() {
 const mystyle = {
-        paddingRight: '50px',
-    	borderRightWidth: '50px',
-    	marginRight: '100px',
-    	width: '765px',
+      paddingRight: '5 vw',
+    	borderRightWidth: '5 vw',
+    	marginRight: '10 vw',
+    	width: '7 vw',
     	left: 'auto',
-    	right: '100px',
+    	right: '10 vw',
     };
   return (
     <div className="page-header header-filter">
@@ -36,9 +36,11 @@ const mystyle = {
       <Container>
 	<div className="content-center">
             <Row className="row-grid justify-content-between align-items-center text-left" style={{
-    width: "1200px",
-    paddingTop: "200px",
-float:'left'}}>
+                                width: "20 vw",
+                                paddingTop: "5 vw",
+                                float:'left'
+                              }}
+            >
               <Col lg="6" md="6" className="mh-100 mw-100">
                 <h1 className="h1-seo brand">findR•</h1>
                 <p className="text-white mb-3">
