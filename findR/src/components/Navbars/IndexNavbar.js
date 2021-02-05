@@ -106,9 +106,9 @@ export default function IndexNavbar() {
           <div className="navbar-collapse-header">
             <Row>
               <Col className="collapse-brand" xs="6">
-                <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                <Link to="#pablo" onClick={(e) => e.preventDefault()}>
                   findR•About
-                </a>
+                </Link>
               </Col>
               <Col className="collapse-close text-right" xs="6">
                 <button
@@ -285,9 +285,9 @@ export default function IndexNavbar() {
                     <Label check>
                       <Input type="checkbox" />
                       <span className="form-check-sign" />I agree to the{" "}
-                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                      <Link to="#pablo" onClick={(e) => e.preventDefault()}>
                         terms and conditions
-                      </a>
+                      </Link>
                       .
                     </Label>
                   </FormGroup>
