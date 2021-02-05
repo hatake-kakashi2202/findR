@@ -14,7 +14,7 @@ import ProfilePage from "views/examples/ProfilePage.js";
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/" render={(props) => <Index {...props} />} />
+      <Route path="/home" render={(props) => <Index {...props} />} />
       <Route
         path="/landing-page"
         render={(props) => <LandingPage {...props} />}
@@ -27,7 +27,7 @@ ReactDOM.render(
         path="/profile-page"
         render={(props) => <ProfilePage {...props} />}
       />
-      <Redirect from="/" to="/components" />
+      <Redirect from="/" to="/home" />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")
