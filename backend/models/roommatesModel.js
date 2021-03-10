@@ -54,6 +54,6 @@ const roommateSchema = mongoose.Schema({
     timestamps: true
 })
 
-const roommate = mongoose.model('Roommate', roommateSchema)
+const Roommate = mongoose.model('Roommate', roommateSchema)
 
 export default Roommate
