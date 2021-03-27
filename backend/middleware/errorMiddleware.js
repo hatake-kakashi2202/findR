@@ -14,4 +14,4 @@ const errorHandler = (err, req, res, next) =>{
     })
 }
 
-expxort { notFound, errorHandler}
+export { notFound, errorHandler}

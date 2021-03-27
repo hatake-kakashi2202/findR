@@ -1,5 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Provider } from 'react-redux'
+import store from './store'
+
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 import "assets/css/nucleo-icons.css";
@@ -12,6 +15,7 @@ import RegisterPage from "views/examples/RegisterPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 
 ReactDOM.render(
+  <Provider store={store}>
   <BrowserRouter>
     <Switch>
       <Route path="/home" render={(props) => <Index {...props} />} />
@@ -29,6 +33,7 @@ ReactDOM.render(
       />
       <Redirect from="/" to="/home" />
     </Switch>
-  </BrowserRouter>,
+  </BrowserRouter>
+  </Provider>,
   document.getElementById("root")
 );
