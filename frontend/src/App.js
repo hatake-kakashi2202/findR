@@ -84,6 +84,7 @@ class App extends Component {
             />
             <Route exact path='/roommates/' component={Roommates}></Route>
             <Route exact path='/roommates/:id' component={Roomies} />
+            <Route exact path='/search/:keyword' component={Roommates} />
             <Route exact path='/roomiereg' component={roomiereg} />
             <Route
               exact

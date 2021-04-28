@@ -3,6 +3,7 @@ import axios from 'axios'
 import '../bootstrap.min.css'
 import { Row, Col, Container } from 'react-bootstrap'
 import Roomiebox from '../components/Roomiebox.js'
+import SearchBox from './SearchBox.js'
 const roommates = () => {
   const [data, setRoommates] = useState([])
 
@@ -16,6 +17,7 @@ const roommates = () => {
   return (
     <div class='roomie'>
       <Container>
+      {/* <SearchBox/> */}
         <br />
         <br />
         <br />
@@ -23,11 +25,19 @@ const roommates = () => {
         <h1>Roommates</h1>
         <Row>
           {data.map((roommate) => (
-            <Col sm={12} md={6} lg={4} xl={3}>
+            <Col sm={12} md={12} lg={6} xl={4}>
               <Roomiebox roommate={roommate} />
             </Col>
           ))}
         </Row>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </Container>
     </div>
   )
