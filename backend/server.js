@@ -6,6 +6,9 @@ import {notFound, errorHandler} from './middleware/errorMiddleware.js'
 import connectDB from './config/db.js'
 import roommateRoutes from './routes/roommateRoutes.js'
 import  authRoutes from './routes/authRoutes.js'
+import roomsRoutes from './routes/roomsRoutes.js'
+
+import packerRoutes from './routes/packerRoutes.js'
 dotenv.config()
 
 const app = express()
@@ -16,8 +19,11 @@ connectDB()
 app.get('/', (req,res) => {
     res.send('API is running....')
 })
-
+app.use(express.static('images'));
 app.use('/api/roommates', roommateRoutes)
+app.use('/api/houses', roomsRoutes)
+
+app.use('/api/packer',packerRoutes)
 app.use(authRoutes)
 app.use(notFound)
 app.use(errorHandler)
