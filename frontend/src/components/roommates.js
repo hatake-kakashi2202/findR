@@ -2,11 +2,19 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import '../bootstrap.min.css'
 import { Row, Col, Container } from 'react-bootstrap'
+<<<<<<< HEAD
 import { Link } from 'react-router-dom'
 import Roomiebox from '../components/Roomiebox.js'
 const roommates = () => {
   const [data, setRoommates] = useState([])
   const [q, setQ] = useState('')
+=======
+import Roomiebox from '../components/Roomiebox.js'
+import SearchBox from './SearchBox.js'
+const roommates = () => {
+  const [data, setRoommates] = useState([])
+
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
   useEffect(() => {
     const fetchRoommates = async () => {
       const { data } = await axios.get('http://localhost:5000/api/roommates')
@@ -16,6 +24,7 @@ const roommates = () => {
   }, [])
   return (
     <div class='roomie'>
+<<<<<<< HEAD
       <br />
       <br />
       <br />
@@ -233,6 +242,30 @@ const roommates = () => {
             </Row>
           </Container>
         </section>
+=======
+      <Container>
+      {/* <SearchBox/> */}
+        <br />
+        <br />
+        <br />
+        <br />
+        <h1>Roommates</h1>
+        <Row>
+          {data.map((roommate) => (
+            <Col sm={12} md={12} lg={6} xl={4}>
+              <Roomiebox roommate={roommate} />
+            </Col>
+          ))}
+        </Row>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
       </Container>
     </div>
   )

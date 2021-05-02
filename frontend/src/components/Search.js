@@ -1,7 +1,11 @@
 import React,{Component} from 'react';
 import axios from 'axios';
 
+<<<<<<< HEAD
 import Posts from './Vish.js';
+=======
+import Posts from './Posts.js';
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
 import Pagination from './Pagination.js';
 class Search extends Component
 {

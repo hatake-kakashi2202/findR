@@ -2,6 +2,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+<<<<<<< HEAD
   font-family: Arial, Helvetica, sans-serif "Poppins-Regular" !important;
 }
 /* Body  */
@@ -10,6 +11,15 @@
   font-size: 15px;
   color:#2E8A82;
   font-weight: 600;
+=======
+  
+}
+/* Body  */
+.landlord {
+  font-family: Arial, Helvetica, sans-serif "Poppins-Regular";
+  font-size: 15px;
+  color: rgb(26, 12, 12);
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
   margin: 0;
   background-color: rgb(13, 80, 80);
 }
@@ -19,15 +29,22 @@
   position: absolute;
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   min-width: 80%;
+=======
+  min-width: 70%;
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
   margin-top:50px;
+<<<<<<< HEAD
   margin-left: 100px;
   padding: 40px;
+=======
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
 }
 
 :focus .landlord{
@@ -336,24 +353,36 @@ textarea.form-control .landlord {
 
   h3 .landlord{
       margin-bottom: 30px;
+<<<<<<< HEAD
       color:white;
+=======
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
   }
 
   .form-group .landlord{
       display: block;
+<<<<<<< HEAD
       color:white;
+=======
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
   }
 
   .form-group label .landlord{
       margin-bottom: 29px;
       display: block;
+<<<<<<< HEAD
       color:white;
+=======
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
   }
 
   .form-group label,
   .form-group .form-holder .landlord{
       width: 100%;
+<<<<<<< HEAD
       color:white;
+=======
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
   }
 
   .checkbox-circle .landlord {
@@ -470,6 +499,7 @@ div {
   background-position: center center;
 }
 
+<<<<<<< HEAD
 .emp-profile{
   padding: 3%;
   border-radius: 0.5rem;
@@ -565,4 +595,7 @@ h5
   font-weight: 600;
   color: #0062cc;
 }
+=======
+
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
 

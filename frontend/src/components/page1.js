@@ -13,7 +13,11 @@ class  Page1 extends Component {
    
     var data=this.state.credentials
    
+<<<<<<< HEAD
     axios.post('http://localhost:5000/api/packer/create',data).then(
+=======
+    axios.post('http://localhost:8000/app/packer/create/',data).then(
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
         res=>{
           console.log(res);         
         }).catch(

@@ -13,7 +13,11 @@ state={
         e.preventDefault();
         var data=this.state.credentials;
         console.log(data);
+<<<<<<< HEAD
          axios.post('http://localhost:5000/forgetpassword',data).then(
+=======
+         axios.post('http://localhost:8000/accounts/request-reset-email/',data).then(
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
              res=>{
                 this.setState({
                     message:res.data.success,

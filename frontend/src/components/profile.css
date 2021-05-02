@@ -1,4 +1,5 @@
 *{
+<<<<<<< HEAD
   box-sizing: border-box;
 }
 .con{
@@ -13,10 +14,27 @@ object-fit: cover;
 
 div {
   display: block;
+=======
+    box-sizing: border-box;
+}
+.con{
+  /* height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  display:block;
+  width:100%; height:90vh;
+  object-fit: cover;
+}
+
+div {
+    display: block;
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
 }
 
 .caurousel1
 {
+<<<<<<< HEAD
 z-index: -1;
 }
 
@@ -71,10 +89,67 @@ color: #999;
   float: left;
   width: 170px;
   padding-right: 16px;
+=======
+  z-index: -1;
+}
+
+.inforow{
+  /* padding: 10px 0; */
+  padding: 11px 15px;
+  margin: 0;
+  
+  line-height: 22px;
+  font-family: Open Sans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.Heading{
+  padding: 11px 15px;
+  margin: 0;
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.description{
+  /* width: 925px; */
+  /* float: left; */
+  position: relative;
+  min-height: 100px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+.block1{
+  padding:50px 75px;
+  margin: -40px 190px;
+  background-color: #fff;
+  box-shadow: 0 1px 20px 0 rgba(0,0,0,.2);
+  margin-bottom: 20px;
+  position:absolute;
+  width: 75%;
+}
+
+.block{
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+  margin-bottom: 20px;
+}
+
+.title{
+  color: #999;
+    font-size: 14px;
+    float: left;
+    width: 170px;
+    padding-right: 16px;
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
 }
 
 .value
 {
+<<<<<<< HEAD
 color: #333;
 font-size: 14px;
 /* float: left; */
@@ -94,4 +169,25 @@ padding-top: 10px;
 .page-section {
 padding: 6rem 4rem;
 background-color: #3AAFA6;
+=======
+  color: #333;
+  font-size: 14px;
+  /* float: left; */
+  width: 740px;
+}
+
+.ak img{
+  width: 22px;
+  height: 22px;
+}
+
+.one{
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.page-section {
+  padding: 6rem 4rem;
+  background-color: #3AAFA6;
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
 }

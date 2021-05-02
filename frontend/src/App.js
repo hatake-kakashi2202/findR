@@ -11,6 +11,7 @@ import ResetPasswordConfirm from './components/ResetPasswordConfirm'
 import axios from 'axios'
 import Navbar from './components/Navbar'
 import Page1 from './components/page1'
+<<<<<<< HEAD
 import Vish from './components/Vish'
 import Contact from './components/Contact'
 import Interior from './components/Interior'
@@ -18,6 +19,15 @@ import Profile from './components/Profile'
 import Roomies from './components/Roomies'
 import Roommates from './components/roommates'
 import Roomiereg from './components/Roomiereg'
+=======
+import Posts from './components/Posts'
+import Contact from './components/Contact'
+import Interior from './components/Interior'
+import Profile from './components/profile'
+import Roomies from './components/Roomies'
+import Roommates from './components/roommates'
+import roomiereg from './components/roomiereg'
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
 class App extends Component {
   state = {}
   componentDidMount = () => {
@@ -63,13 +73,22 @@ class App extends Component {
               component={() => <Login setUser={this.setUser} />}
             />
             <Route exact path='/register' component={Register} />
+<<<<<<< HEAD
             <Route exact path='/posts' component={Vish} />
+=======
+            <Route exact path='/posts' component={Posts} />
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
             <Route exact path='/contact' component={Contact} />
             <Route exact path='/profile' component={Profile} />
             <Route exact path='/password-reset/' component={ResetPassword} />
             <Route
+<<<<<<< HEAD
              
               path='/changepassword/:'
+=======
+              exact
+              path='/accounts/password-reset/:uidb64/:token/'
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
               component={ResetPasswordConfirm}
             />
             <Route
@@ -84,9 +103,14 @@ class App extends Component {
             />
             <Route exact path='/roommates/' component={Roommates}></Route>
             <Route exact path='/roommates/:id' component={Roomies} />
+<<<<<<< HEAD
             <Route exact path='/roomiereg' 
             component={() => <Roomiereg user={this.state.user}/>}
              />
+=======
+            <Route exact path='/search/:keyword' component={Roommates} />
+            <Route exact path='/roomiereg' component={roomiereg} />
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
             <Route
               exact
               path='/interior/'

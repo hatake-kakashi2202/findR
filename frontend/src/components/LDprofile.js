@@ -62,7 +62,10 @@ class LDprofile extends Component{
 
     state={
         userdata:'',
+<<<<<<< HEAD
         name:localStorage.getItem('name'),
+=======
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
         updateprof:false,
         filename1:'choose file',
         filename2:'choose file',
@@ -79,11 +82,19 @@ class LDprofile extends Component{
         
   
   
+<<<<<<< HEAD
         axios.get('http://localhost:5000/api/houses/'+localStorage.getItem('name')).then(
             res=>{
                 this.setState({userdata:res.data});
                 console.log(this.state.userdata);
                 console.log("hello")
+=======
+        axios.get('http://localhost:8000/listings/house/'+localStorage.getItem('name')+'/').then(
+            res=>{
+                this.setState({userdata:res.data});
+                
+                
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
             },
            err=>{
                console.log(err)
@@ -231,6 +242,7 @@ render()
   const data = [{
     id: 1,
     name: "Exterior",
+<<<<<<< HEAD
     image:"http://localhost:5000/"+this.state.userdata.photo_1
     
 }, {
@@ -244,6 +256,32 @@ render()
 },];
 
 console.log(data);
+=======
+    image:"http://localhost:8000"+this.state.userdata.photo_1
+}, {
+    id: 2,
+    name: "Living Room",
+    image: "http://localhost:8000"+this.state.userdata.photo_2
+}, {
+    id: 3,
+    name: "Bedroom",
+    image: "http://localhost:8000"+this.state.userdata.photo_3
+},{
+id: 4,
+name: "Exterior",
+image:"http://localhost:8000"+this.state.userdata.photo_1
+}, {
+id: 5,
+name: "Living Room",
+image: "http://localhost:8000"+this.state.userdata.photo_2
+}, {
+id: 6,
+name: "Bedroom",
+image: "http://localhost:8000"+this.state.userdata.photo_3
+}, ];
+
+
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
     
     let optio;
     if(this.state.userdata.propertyfor==='Rent')
@@ -852,6 +890,7 @@ options={options4}
     return(
       <div className="profile" style={{overflowX:"hidden"}} >
 <section className="page-section bg-primary" id="contact" >
+<<<<<<< HEAD
 
 <div className="row justify-content-center" style={{background:"#FCF6EE",padding:"20px"}}>
   <h2 className="text-center text-greendark mt-0"> {this.state.name}'s Profile</h2>
@@ -991,13 +1030,128 @@ options={options4}
       </div>
 </section>
 <section className="page-sectiongrey" id="contact" >
+=======
+<div className="container">
+<div className="row justify-content-center" >
+ <div className="col">
+ <h2 className="text-center text-whitecream mt-0"> {this.state.userdata.name}'s Profile</h2>
+ <div style={{float:"right"}}>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button className="btn btn-light btn-xl "  onClick={this.handleUpdate}>Update Profile</button>   
+  </div>
+   <hr className="divider dark my-4" />
+  
+ </div>
+</div>
+<br/>
+<br/>
+<div className="row">
+   <div className="col-lg-6">
+   <div className="inforow">
+ <div className="title text-whitecream"><b>PropertyFor:</b></div>
+ <div className="value text-dark">  
+   {this.state.userdata.propertyfor}
+ </div>
+</div>
+<div className="inforow">  
+ <div className="title text-whitecream"><b>HouseType:</b></div>
+ <div className="value text-dark">  
+   {this.state.userdata.housetype}
+ </div>
+</div>
+<div className="inforow">
+ <div className="title text-whitecream"><b>AccomdationType:</b></div>
+ <div className="value text-dark">
+   {this.state.userdata.accomdationtype}
+ </div>
+</div>
+<div className="inforow">
+ <div className="title text-whitecream"><b>HouseNumber:</b></div>
+ <div className="value text-dark"> 
+   {this.state.userdata.housenumber}
+ </div>
+</div>
+<div className="inforow">
+ <div className="title text-whitecream"><b>Rental Value:</b></div>
+ <div className="value text-dark">
+   <span className="rupee">₹</span>
+   {this.state.userdata.minprice}
+ </div>
+</div>
+<div className="inforow">
+ <div className="title text-whitecream"><b>Build up area:</b></div>
+ <div className="value text-dark">
+   {this.state.userdata.sqft} sq.ft
+ </div>
+</div>
+<div className="inforow">
+ <div className="title text-whitecream"><b>Pets:</b></div>
+ <div className="value text-dark">
+   {this.state.userdata.pets} 
+ </div>
+</div>
+</div>
+<div className="col-lg-6">
+<div className="inforow">
+ <div className="title text-whitecream"><b>State:</b></div>
+ <div className="value text-dark">
+   {this.state.userdata.state}
+ </div>
+</div>
+<div className="inforow">
+ <div className="title text-whitecream"><b>City:</b></div>
+ <div className="value text-dark">
+   {this.state.userdata.city}
+ </div>
+</div>
+<div className="inforow">
+ <div className="title text-whitecream"><b>ZipCode:</b></div>
+ <div className="value text-dark">
+   {this.state.userdata.zipcode}
+ </div>
+</div>
+<div className="inforow">
+ <div className="title text-whitecream"><b>Address:</b></div>
+ <div className="value text-dark">
+   {this.state.userdata.address}
+ </div>
+</div>
+<div className="inforow">
+ <div className="title text-whitecream"><b>Bedrooms:</b></div>
+ <div className="value text-dark">
+   {this.state.userdata.bedrooms}
+ </div>
+</div>
+<div className="inforow">
+ <div className="title text-whitecream"><b>Bathrooms:</b></div>
+ <div className="value text-dark">
+   {this.state.userdata.bathrooms}
+ </div>
+</div>
+<div className="inforow">
+ <div className="title text-whitecream"><b>Propertyfloor:</b></div>
+ <div className="value text-dark">
+   {this.state.userdata.propertyfloor} of {this.state.userdata.numberoffloors}
+ </div>
+</div>
+<br/>
+<br/>
+</div>
+</div>
+</div>
+</section>
+<section className="page-sectioncream" id="contact" >
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
 <div className="row justify-content-center" >
 
  <div className="col-lg-8">
  <br/>
 <br/>
 <br/>
+<<<<<<< HEAD
  <h2 className="text-center mt-0"> {this.state.name}'s Gallery</h2>
+=======
+ <h2 className="text-center mt-0"> {this.state.userdata.name}'s Gallery</h2>
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
    <hr className="divider my-4" />
    </div>
    <div className="tiles">

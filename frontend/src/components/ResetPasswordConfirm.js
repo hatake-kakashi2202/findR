@@ -27,8 +27,13 @@ confirmpassword={};
         const data={
             password:this.password,
             confirmpassword:this.confirmpassword,
+<<<<<<< HEAD
             
            
+=======
+            token:this.props.match.params.token,
+            uidb64:this.props.match.params.uidb64,
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
            
            
 
@@ -46,7 +51,11 @@ confirmpassword={};
       
      
         console.log(data);
+<<<<<<< HEAD
        axios.post('http://localhost:5000/changepassword/:'+token,data,config).then(
+=======
+       axios.patch('http://localhost:8000/accounts/password-reset-complete',data,config).then(
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
              res=>{
                  console.log(res.data);
                  this.setState({

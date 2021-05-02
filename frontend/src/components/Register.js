@@ -99,6 +99,7 @@ class  Register extends Component {
     
    
     return (
+<<<<<<< HEAD
       <div  id="particles-js" className="landlord" style={{fontFamily:"sans-serif"}}>
         <Helmet>
     <script src="../../public/particles.min.js"></script>
@@ -113,6 +114,22 @@ class  Register extends Component {
          <div id="cardForm" className="card1 shadow mb-5 bg-dark rounded">
            <div id="stepper-form" >
            <h5 className="h5 text-center">Register Your Information</h5>
+=======
+     <div id="particles-js" className="main">
+        <Helmet>
+    <script src="../../public/particles.min.js"></script>
+    <script src="../../public/particles.js"></script>
+    <script src="../../public/app.js"></script>
+          </Helmet>
+         <br/>
+      <br/>
+      <br/>
+      <div className="container main">
+              <div id="cardForm" className="card shadow p-3 mb-4 bg-white rounded">
+                <h2 id="main-section" className="h2 text-center" />
+                <div id="stepper-form" >
+                    <h5 className="h5 text-center">Register Your Information</h5>
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
                     <div className="form-group">
                       <label htmlFor="name">Email:</label>
                       <input type="text"   onChange={this.inputChanged} value={this.state.credentials.email} className="form-control"  placeholder={"Enter user email"} name="email" required />
@@ -125,7 +142,14 @@ class  Register extends Component {
                       <input type="text"   onChange={this.inputChanged} value={this.state.credentials.name} className="form-control"  placeholder={"Enter user name"} name="name" required />
                       <div className="valid-feedback">Valid.</div>
                       <div className="invalid-feedback">Please fill out this field.</div>
+<<<<<<< HEAD
                     </div>                
+=======
+                    </div>
+
+                  
+
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
                     <div className="form-group">
                       <label htmlFor="name">Person:</label>
                       <select type="text"   onChange={this.inputChanged} value={this.state.credentials.person} className="form-control"  placeholder={"Choose your title1"} name="person" required >
@@ -134,6 +158,10 @@ class  Register extends Component {
                       <option value="1">Owner</option>
                       </select>
                       </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
                     <div className="form-group">
                       <label htmlFor="name">Password:</label>
                       <input type="text"   onChange={this.inputChanged} value={this.state.credentials.password} className="form-control"  placeholder={"Enter user password"} name="password" required />
@@ -141,6 +169,7 @@ class  Register extends Component {
                       <div className="invalid-feedback">Please fill out this field.</div>
                     </div>
             <button type="submit" className="btn btn-info" style={{float:"right"}}  onClick={this.register}>Submit</button>
+<<<<<<< HEAD
                </div>
            </div>
            <br/>
@@ -149,10 +178,18 @@ class  Register extends Component {
          </div>
 
  
+=======
+                </div>
+              </div>
+            </div>
+         
+      </div>
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
     )
   
 }
 }
+<<<<<<< HEAD
 export default Register;
 
 
@@ -190,3 +227,6 @@ export default Register;
             //           <div className="invalid-feedback">Please fill out this field.</div>
             //         </div>
             // <button type="submit" className="btn btn-info" style={{float:"right"}}  onClick={this.register}>Submit</button>
+=======
+export default Register;
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a

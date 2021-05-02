@@ -27,10 +27,17 @@ class Profile extends Component{
     }
     componentDidMount =()=>
     {
+<<<<<<< HEAD
       axios.get('http://localhost:5000/api/houses/'+this.props.location.state).then(
           res=>{
               this.setState({userdata:res.data});
               console.log(this.state.userdata.photo_2);
+=======
+      axios.get('http://localhost:8000/listings/house/'+this.props.location.state+'/').then(
+          res=>{
+              this.setState({userdata:res.data});
+              console.log(res.data);
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
           },
          err=>{
              console.log(err)
@@ -52,6 +59,7 @@ class Profile extends Component{
       return(
         <div style={{overflow: "hidden"}}>
           <Carousel style={{overflowX: "hidden"}}>
+<<<<<<< HEAD
             <Carousel.Item >
               <img className="con" src={"http://localhost:5000/"+this.state.userdata.photo_1}/>
             </Carousel.Item>
@@ -60,6 +68,16 @@ class Profile extends Component{
             </Carousel.Item>
             <Carousel.Item>
             <img  className="con" src={"http://localhost:5000/"+this.state.userdata.photo_3} />
+=======
+            <Carousel.Item interval={1000}>
+              <img className="con" src={"http://localhost:8000"+this.state.userdata.photo_1}/>
+            </Carousel.Item>
+            <Carousel.Item interval={500}>
+            <img  className="con" src={"http://localhost:8000"+this.state.userdata.photo_2} />
+            </Carousel.Item>
+            <Carousel.Item>
+            <img  className="con" src={"http://localhost:8000"+this.state.userdata.photo_3} />
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
             </Carousel.Item>
           </Carousel>
         {/* <div className="block">
@@ -73,70 +91,126 @@ class Profile extends Component{
         <div className="block1" style={{overflowX: "hidden"}}>
         <div className="inforow">
           <div class="title">Rental Value</div>
+<<<<<<< HEAD
          
           <div className="value">
           <span className="rupee">₹</span>
+=======
+          <div class="value">
+          <span class="rupee">₹</span>
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
           {this.state.userdata.minprice}
           </div>
         </div>
         <div className="inforow">
+<<<<<<< HEAD
           <div className="title">Booking amount</div>
           <div className="value">
           <span className="rupee">₹</span>
+=======
+          <div class="title">Booking amount</div>
+          <div class="value">
+          <span class="rupee">₹</span>
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
           {2*this.state.userdata.minprice}
           </div>
         </div>
         <div className="inforow">
+<<<<<<< HEAD
           <div className="title">Address</div>
           <div className="value">
+=======
+          <div class="title">Address</div>
+          <div class="value">
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
            {this.state.userdata.address},{this.state.userdata.zipcode},{this.state.userdata.city},{this.state.userdata.state}
           </div>
         </div>
         <div className="inforow">
+<<<<<<< HEAD
           <div className="title">Build up area</div>
           <div className="value">
+=======
+          <div class="title">Build up area</div>
+          <div class="value">
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
           {this.state.userdata.sqft} sq.ft
           </div>
         </div>
         <div className="inforow">
+<<<<<<< HEAD
           <div className="title">Facing</div>
           <div className="value">
+=======
+          <div class="title">Facing</div>
+          <div class="value">
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
             East
           </div>
         </div>
         <div className="inforow">
+<<<<<<< HEAD
           <div className="title">Bedrooms</div>
           <div className="value">
+=======
+          <div class="title">Bedrooms</div>
+          <div class="value">
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
           {this.state.userdata.bedrooms}
           </div>
         </div>
         <div className="inforow">
+<<<<<<< HEAD
           <div className="title">Bathrooms</div>
           <div className="value">
+=======
+          <div class="title">Bathrooms</div>
+          <div class="value">
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
           {parseInt(this.state.userdata.bathrooms)}
           </div>
         </div>
         <div className="inforow">
+<<<<<<< HEAD
           <div className="title">Propertyfloor</div>
           <div className="value">
+=======
+          <div class="title">Propertyfloor</div>
+          <div class="value">
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
           {this.state.userdata.propertyfloor} of {this.state.userdata.numberoffloors}
           </div>
         </div>
         <div className="inforow">
+<<<<<<< HEAD
           <div className="title">Age of Property</div>
           <div className="value">
+=======
+          <div class="title">Age of Property</div>
+          <div class="value">
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
            Less than 5 years
           </div>
         </div>
         <div className="inforow">
+<<<<<<< HEAD
           <div className="title">Furnishing</div>
           <div className="value">
+=======
+          <div class="title">Furnishing</div>
+          <div class="value">
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
            Semi-Furnished
           </div>
         </div>
         <div className="inforow">
+<<<<<<< HEAD
           <div className="title">Status</div>
           <div className="value">
+=======
+          <div class="title">Status</div>
+          <div class="value">
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
            Immediately Available
           </div>
           </div>

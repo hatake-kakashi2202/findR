@@ -72,6 +72,7 @@ const Roomies = ({ match }) => {
                   <Tab.Content>
                     <Tab.Pane eventKey='#link1'>
                       <br />
+<<<<<<< HEAD
                       <br />I am a {data.gender} looking for a roommate. I hail
                       form {data.hometown} and I currently reside in{' '}
                       {data.roomtown}. My native language is {data.language}
@@ -85,6 +86,21 @@ const Roomies = ({ match }) => {
                       <br />
                       <br />I say {data.alcohol} to Alcohol and {data.smoking}{' '}
                       to smoking.
+=======
+                      <br />I am a {data.gender} looking for a roommate. I
+                      hail form {data.hometown} and I currently reside in{' '}
+                      {data.roomtown}.
+                    </Tab.Pane>
+                    <Tab.Pane eventKey='#link2'>
+                      <br />
+                      <br />I Work as a {data.occupation} with {data.course}{' '}
+                      as my speciality.
+                    </Tab.Pane>
+                    <Tab.Pane eventKey='#link3'>
+                      <br />
+                      <br />I say {data.alcohol} to Alcohol and{' '}
+                      {data.smoking} to smoking.
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
                     </Tab.Pane>
                     <Tab.Pane eventKey='#link4'>
                       <br />

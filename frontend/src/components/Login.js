@@ -18,7 +18,11 @@ login=event=>{
       res=>{
         console.log(res);
         localStorage.setItem('token',res.data.token);  
+<<<<<<< HEAD
         localStorage.setItem('name',res.data.name); 
+=======
+      
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
         localStorage.setItem('id',res.data.id);
        this.setState({
          loggedIn:true
@@ -65,7 +69,11 @@ inputChanged= event=>{
  <br/>
  <br/>
  <div className="container main">
+<<<<<<< HEAD
          <div id="cardForm" className="card1 shadow p-3 mb-5 bg-dark rounded">
+=======
+         <div id="cardForm" className="card1 shadow p-3 mb-5 bg-white rounded">
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
            <div id="stepper-form" >
                <br/>
                <h5 className="h5 text-center">Login Form</h5>

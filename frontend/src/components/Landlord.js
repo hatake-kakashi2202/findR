@@ -1,5 +1,9 @@
 import React, {  Component } from 'react';
+<<<<<<< HEAD
 import {Link, Redirect } from 'react-router-dom';
+=======
+
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
 import axios from 'axios';
 import './style.css';
 import img1 from './images/pic22.jpg'
@@ -113,7 +117,11 @@ class  Landlord extends Component {
 
   handlesubmit=(event)=>{
     event.preventDefault();
+<<<<<<< HEAD
     //console.log(event.target.name);
+=======
+    console.log(event.target.name);
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
     this.statechanged(event.target.name,event.target.value)
   }
   handleChange = selectedOption => {
@@ -174,7 +182,11 @@ class  Landlord extends Component {
     if(names==='photo_1')
     {
       this.setState({filename1:value.name});
+<<<<<<< HEAD
       //console.log(value.name);
+=======
+      console.log(value.name);
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
     }
     if(names==='photo_2')
     {
@@ -185,7 +197,11 @@ class  Landlord extends Component {
       this.setState({filename3:value.name});
     }
    cred[names]=value;
+<<<<<<< HEAD
     //console.log(cred);
+=======
+    console.log(cred);
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
     this.setState({credentials:cred});
   }
 
@@ -194,7 +210,11 @@ class  Landlord extends Component {
    
   
   const data=new FormData();
+<<<<<<< HEAD
   data.append("name",this.state.credentials.name),
+=======
+  data.append("name",this.state.credentials.name);
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
   data.append("propertyfor",this.state.credentials.propertyfor);
   data.append("housetype",this.state.credentials.housetype);
   data.append("accomdationtype",this.state.credentials.accomdationtype);
@@ -216,6 +236,7 @@ class  Landlord extends Component {
   data.append("photo_2",this.state.credentials.photo_2);
   data.append("photo_3",this.state.credentials.photo_3);
   console.log(data)
+<<<<<<< HEAD
   axios.post('http://localhost:5000/api/houses/create',data,
    
   ).then(
@@ -224,6 +245,15 @@ class  Landlord extends Component {
           console.log(res.data._id)
           localStorage.setItem('id1',res.data._id);  
           return <Redirect exact to="/" />;
+=======
+  axios.post('http://localhost:8000/listings/house/create/',data,
+   
+  ).then(
+      res=>{
+          console.log(res)
+         
+         
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
 
 
       }).catch(err=>{
@@ -400,6 +430,7 @@ options={options4}
                             <h5 className="h5 text-center">Step 1 out of 6</h5>
                             <br/>
                             <div className="form-group">
+<<<<<<< HEAD
          {/* Lastname */}
          <label htmlFor="name">Name</label>
          <input type="text" className="form-control" placeholder="Enter Name" name="name" value={this.state.credentials.name}
@@ -411,6 +442,18 @@ onChange={this.handlesubmit} required />
          <div className="invalid-feedback">Please fill out this field.</div>
        </div>
                           
+=======
+                      {/* Label: first name */}
+                      <label htmlFor="name">User name:</label>
+                      {/* Input class: form-control and ID form-fname and name: fname */}
+                      <input type="text"   onChange={this.handlesubmit} value={this.state.credentials.name} className="form-control"  placeholder={"Enter user name"} name="name" required />
+                      {/* And add a class: valid-feedback */}
+                      <div className="valid-feedback">Valid.</div>
+                      {/* And a class: invalid-feedback (Bootstrap class) */}
+                      <div className="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
                     {optio}
                             <br/>
                           </section>

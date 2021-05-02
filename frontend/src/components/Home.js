@@ -44,7 +44,10 @@ class Home extends Component {
       </div>
     </header>
     {/* About*/}
+<<<<<<< HEAD
     
+=======
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
     <section className="page-section bg-primary" id="about">
       <div className="container">
         <div className="row justify-content-center">
@@ -84,7 +87,11 @@ class Home extends Component {
           </div>
         
           <div className="col-lg-3 col-md-6 text-center">
+<<<<<<< HEAD
           <Link className="text-whitecream" to={"/roommates"}>
+=======
+          <Link className="text-whitecream" to={"/roommates/akmu09"}>
+>>>>>>> 8c73e9ea2180e86e2265cc96d29d9a75d733e18a
             <div className="mt-5">
             <img src={logo3} alt="" />
               <h3 className="h4 text-greenlight mb-2">Finding Roomates</h3>
